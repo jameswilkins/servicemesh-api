@@ -10,7 +10,7 @@ class HelloWorld(Resource):
 
 class SomeCrap(Resource):
     def get(self):
-        return {'w00p' : 'w00p'}
+        return {'Calling from ' : '/foo'}
 
 api.add_resource(HelloWorld, '/')
 api.add_resource(SomeCrap, '/foo')
